@@ -18,10 +18,10 @@ public class Manager extends Employee
             super(name);
             this.setHourlyWage(wage);
             this.setHours(hours);
-            System.out.println("Please enter a bonus for the manager");
-            Scanner sc = new Scanner(System.in);
-            double givenBonus = sc.nextDouble();
-            bonus = givenBonus;
+            //System.out.println("Please enter a bonus for the manager");
+            //Scanner sc = new Scanner(System.in);
+            //double givenBonus = sc.nextDouble();
+            //bonus = givenBonus;
         }
 	/**
 	 * A constructor that sets the bonus to zero
@@ -59,10 +59,12 @@ public class Manager extends Employee
         /**
          * A method to print the manager's statement to the console
          */
-        public void printStatement()
+        public String printStatement()
         {
-        System.out.println(" Manager:" + getName() + " is owed: ");
-        System.out.printf("%s%.2f\n", " $", calculatePay() );
-        System.out.println("**************************************************************");
+            
+        String a = " Manager:" + getName() + " is owed: ";
+        String b =" $" + calculatePay() ;
+        String c = "**************************************************************";
+        return a+b+c;
         }
 }

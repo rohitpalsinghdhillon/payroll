@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class Payroll
 {
- private Object employees[] = new Object[100];//the array to hold Employee Objects
+ private Employee employees[] = new Employee[100];//the array to hold Employee Objects
  
  /**
   * A main method where we create an instance of the payroll
@@ -62,7 +62,10 @@ private void run()
     String manager = sc.nextLine();
     if(manager.equals("yes"))
     {
+        System.out.println("Please enter a bonus for the manager");
+        double bonus = sc.nextDouble();
         Manager man = new Manager(name, numHours, wage);
+        man.setBonus(bonus);
         employees[numEmployees]=man;
     }
     else
@@ -109,7 +112,7 @@ private void run()
      }
    
    Employee emp =(Employee)employees[i];
-   emp.printStatement();
+   System.out.println(emp.printStatement());
    //note that this will not work with Managers!
    totalPaid+=emp.calculatePay();
   }

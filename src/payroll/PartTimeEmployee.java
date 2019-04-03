@@ -9,17 +9,13 @@ package payroll;
  * A class that represents part-time employees
  * @author dancye
  */
-public class PartTimeEmployee 
+public class PartTimeEmployee extends Employee
 {
-        private String name;
-	private double numHours;
-	private double hourlyWage;
+     
         
         public PartTimeEmployee(String givenName, double givenHours, double givenWage)
         {
-            name = givenName;
-            numHours = givenHours;
-            hourlyWage = givenWage;
+            super(givenName, givenHours,givenWage);
         }
         
         /**
@@ -30,7 +26,7 @@ public class PartTimeEmployee
          */
         public double calculatePay()
         {
-            double extra = (numHours*hourlyWage)*0.1;
-            return (numHours*hourlyWage)+extra;
+            double extra = (getHours()*getHourlyWage())*0.1;
+            return (getHours()*getHourlyWage())+extra;
         }
 }

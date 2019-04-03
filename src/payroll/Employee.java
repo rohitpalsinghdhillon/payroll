@@ -120,11 +120,12 @@ public class Employee
  * It then uses printf to format the output in a professional way.
  * @param emp an Employee Object.
  */
-public void printStatement()
+public String printStatement()
 {
-  System.out.println(" Employee:" + getName() + " is owed: ");
-  System.out.printf("%s%.2f\n", " $", calculatePay() );
-  System.out.println("**************************************************************");
+  String a =" Employee:" + getName() + " is owed: ";
+  String b = " $"+ calculatePay() ;
+  String c ="**************************************************************";
+  return a+b+c;
 }
 	
 }

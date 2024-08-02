@@ -6,7 +6,7 @@ import java.util.Scanner;
  * A Manager is an Employee. This class shows 
  * the inheritance relationship discussed in class
  * @author Liz Dancy, 2018
- *
+ * @modified by Rohitpal Singh on (2 August 2024)
  */
 public class Manager extends Employee 
 {

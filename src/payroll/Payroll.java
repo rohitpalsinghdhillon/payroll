@@ -7,6 +7,7 @@ package payroll;
  * the PayRoll class.
  * Used as the starting code for ICE 5 in SYST 17796, 2018
  * @author: Liz Dancy 
+ * @modified by Rohitpal Singh on (2 August 2024)
  */
 import java.util.Scanner;
 

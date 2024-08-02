@@ -8,7 +8,7 @@ package payroll;
  * Employees have a name, a number of hours
  * and an hourlyWage.
  * @author Liz Dancy, 2018
- *
+ * @modified by Rohitpal Singh on (2 August 2024)
  */
 public class Employee 
 {
